@@ -9,14 +9,19 @@
     max-width: 300px; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     padding: 40px; /* Add padding around the image */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Styling the navigation menu */
 nav {
-    position: absolute;
+     position: absolute;
     top: 0;
     right: 0;
     padding: 40px;
+    max-width: calc(100% - 320px); /* Adjusted width to accommodate title image and margin */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
 nav ul {
@@ -29,6 +34,7 @@ nav ul li {
     display: inline-block; /* Display menu items horizontally */
     margin-right: 40px; /* Add some spacing between menu items */
     position: relative; /* Enable absolute positioning for text */
+    margin-bottom: 20px; /* Adjust margin between menu items and sticky notes */
 }
 
 nav ul li a {
@@ -82,8 +88,19 @@ nav ul li span {
 
 /* Ensure text scales responsively */
 @media (max-width: 768px) {
+    #title-drawing {
+        margin: auto; /* Center the title image horizontally and vertically */
+        display: block; /* Ensure it's displayed as a block element */
+    }
+    main {
+        margin-top: 300px; /* Adjust this margin based on the height of your title drawing and menu bar for smaller screens */
+        align-items: center; /* Center vertically when in single-file mode */
+    }
     nav {
+        max-width: 100%; /* Adjust width for smaller screens */
+        padding-right: 20px; /* Add space between menu items and viewport edge */
         position: relative;
+        padding: 40px 0 40px 20px; /* Adjust padding to accommodate the left margin */
         padding: 20px;
         text-align: right;
     }
@@ -103,26 +120,33 @@ nav ul li span {
         margin-right: 0;
         margin-bottom: 10px; /* Add margin at the bottom for spacing between rows */
     }
+    
 }
 
 /* Styling the main content */
 main {
-    margin-top: 100px; /* Adjust this margin based on the height of your title drawing */
+    margin-top: 400px; /* Adjust this margin based on the height of your title drawing */
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center; /* Center flex items horizontally */
 }
 
+
 .sticky-note {
-    flex: 1 0 auto; /* Let sticky notes grow and shrink as needed */
+    flex: 1 0 45%; /* Adjust this value for different screen sizes */
     margin: 10px;
     position: relative; /* Enable absolute positioning for child elements */
+    max-width: calc(25% - 20px); /* Set maximum width for each sticky note */
+    /* Subtracting margin from the max-width to prevent wrapping */
+    margin-top: 20px; /* Adjust margin between sticky notes and menu items */
 }
 
 .sticky-note img {
     width: 100%;
     height: auto;
 }
+
 /* Positioning for sticky note content */
 .sticky-note .content {
     position: absolute;
@@ -140,4 +164,30 @@ main {
 .sticky-note:nth-child(2) .content,
 .sticky-note:nth-child(4) .content {
     top: 40%; /* Adjust vertically for the second and fourth sticky notes */
+}
+
+.sticky-note:nth-child(1){
+    flex: 2 0 100%; /* Set width to be twice as much */
+    max-width: 700px; /* Set maximum width for the first sticky note */
+}
+.sticky-note:nth-child(4){
+    flex: 2 0 100%; /* Set width to be twice as much */
+    max-width: 400px; /* Set maximum width for the first sticky note */
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+        align-items: center; /* Center flex items vertically */
+    }
+
+    .sticky-note {
+        max-width: calc(50% - 20px); /* Set maximum width for each sticky note for two columns */
+    }
+}
+@media (max-width: calc(300px + 20px + 40px)) {
+    nav {
+        position: relative;
+        padding: 40px 0 40px 20px;
+    }
 }
