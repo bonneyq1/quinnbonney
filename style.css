@@ -73,8 +73,21 @@ nav ul li span {
 
 /* Ensure text scales responsively */
 @media (max-width: 768px) {
-    nav ul li span {
-        font-size: 18px; /* Reduce font size for smaller screens */
+    nav {
+        position: relative;
+        padding: 20px;
+        text-align: right;
+    }
+
+    #title-drawing {
+        position: relative;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
     }
 }
 

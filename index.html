@@ -5,44 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quinnbonney</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Your existing CSS styles here */
-        nav {
-            position: relative; /* Set to relative for stacking order */
-            text-align: center; /* Center the menu items */
-        }
-
-        nav ul {
-            list-style-type: none;
-        }
-
-        nav ul li {
-            display: inline-block; /* Display menu items as inline-block to allow multiple rows */
-            margin-right: 10px; /* Adjust the margin between menu items */
-            margin-bottom: 10px; /* Add margin at the bottom for spacing between rows */
-        }
-
-        #title-drawing {
-            display: block; /* Display as block element */
-            margin: 0 auto 20px; /* Center the image and add margin at the bottom */
-        }
-
-        /* Media query for smaller screens */
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block; /* Display menu items as block on smaller screens */
-                margin-right: 0; /* Reset margin-right */
-                margin-bottom: 10px; /* Add margin at the bottom */
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Title Drawing -->
-    <img src="title_drawing.png" alt="Quinns Artpalooza" id="title-drawing">
+    <header>
+        <img src="title_drawing.png" alt="Quinns Artpalooza" id="title-drawing">
+    </header>
     <!-- Navigation Menu -->
     <nav>
-        <ul>
+        <ul id="menu-tabs">
             <li><a href="photography.html"><img src="photography_scrap.png" alt="Photography Scrap"><span>Photography</span></a></li>
             <li><a href="graphic_design.html"><img src="graphic_design_scrap.png" alt="Graphic Design Scrap"><span>Graphic Design</span></a></li>
             <li><a href="other_stuff.html"><img src="other_stuff_scrap.png" alt="Other Stuff Scrap"><span>Other Stuff</span></a></li>
