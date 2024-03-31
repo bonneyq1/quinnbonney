@@ -1,28 +1,53 @@
-/* Reset default browser styles */
-body, h1, p {
+/* Resetting default margin and padding */
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Your CSS styles go here */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+/* Styling the title drawing */
+#title-drawing {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+/* Styling the navigation menu */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Styling the main content */
+main {
+    margin-top: 100px; /* Adjust this margin based on the height of your title drawing */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky-note {
+    flex: 1 0 45%; /* Adjust this value for different screen sizes */
+    margin: 10px;
+}
+
+.sticky-note img {
     width: 100%;
-    text-align: center;
+    height: auto;
 }
