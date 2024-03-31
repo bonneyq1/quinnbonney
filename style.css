@@ -18,7 +18,7 @@
 
 /* Styling the navigation menu */
 nav {
-     position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     padding: 40px;
@@ -97,8 +97,7 @@ nav ul li span {
     font-family: "Jacques Francois Shadow", sans-serif; /* Use Jacques Francois Shadow font */
     font-size: 30px; /* Set font size to 24px */
     color: black; /* Set text color to black */
-     /* Add a thicker outline around the text */
-/* Add a thicker outline around the text */
+    /* Add a thicker outline around the text */
     text-shadow:
         -1px -1px 0 white,  
          1px -1px 0 white,
@@ -210,8 +209,18 @@ main {
 }
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    nav ul {
+        text-align: center; /* Center the menu items horizontally */
+    }
     nav ul li {
-        margin-bottom: 20px; /* Adjust margin for spacing between menu items */
+        display: block;
+        padding-left: 20px;
+        margin-right: 0;
+        margin-bottom: 20px; /* Adjust margin for spacing between menu items */ 
+    }
+    nav ul li span {
+        display: inline-block; /* Ensure <span> elements are displayed as block elements */
+        margin: 0 auto; /* Center the <span> elements horizontally */
     }
     
     nav {
@@ -241,9 +250,33 @@ main {
 /* Media query for smaller screens */
 @media (max-width: 1642px) {
     #title-drawing {
+        margin-right: 60px; /* Increase padding around the title image */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+}
+ /* media query for spacing issue with menu items and sticky notes*/
+@media (max-width: 1430px) {
+    nav {
         padding: 40px 60px; /* Increase padding around the title image */
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
+}
+
+/* media query for more spacing issues with sticky notes */
+@media (max-width: 1234px) {
+    main {
+        margin: 40px; /* Increase padding around the title image */
+        margin-top: 800px; /* Adjust this margin based on the height of your title drawing and menu bar for smaller screens */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        display: block;
+    }
+}
+
+/* Permanent margin around the title image */
+#title-drawing {
+    margin-right: 80px; /* Increase padding around the title image */
+    margin-bottom: 1px; /* Increase margin at the bottom */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 body {
@@ -253,6 +286,4 @@ body {
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-attachment: fixed; /* Ensure the background image remains fixed while scrolling */
     background-color: rgba(255, 255, 255, 0.6); /* Set the background color with opacity */
-}
-
 }
