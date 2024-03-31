@@ -6,7 +6,7 @@
 
 /* Styling the title drawing */
 #title-drawing {
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 300px; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     padding: 20px; /* Add padding around the image */
 }
@@ -35,10 +35,25 @@ nav ul li a {
 
 /* Styling the text within menu scraps */
 nav ul li img {
-    width: auto; /* Allow images to resize based on their original dimensions */
     max-width: 100%;
     height: auto;
     position: relative; /* Ensure text is positioned relative to its parent image */
+}
+/* Ensure images don't exceed the available space */
+nav ul li:nth-child(1) img {
+    max-width: 242px; /* Set maximum width for photography scrap */
+}
+
+nav ul li:nth-child(2) img {
+    max-width: 208px; /* Set maximum width for graphic design scrap */
+}
+
+nav ul li:nth-child(3) img {
+    max-width: 200px; /* Set maximum width for other stuff scrap */
+}
+
+nav ul li:nth-child(4) img {
+    max-width: 159px; /* Set maximum width for about me scrap */
 }
 
 nav ul li span {
