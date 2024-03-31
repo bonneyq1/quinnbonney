@@ -21,6 +21,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    padding-left: 320px; /* Add padding to the left */
 }
 
 nav ul li {
@@ -85,9 +86,14 @@ nav ul li span {
         margin: 0;
     }
 
+    nav ul {
+        padding-left: 0; /* Reset padding for smaller screens */
+    }
+
     nav ul li {
         display: block;
         margin-right: 0;
+        margin-bottom: 10px; /* Add margin at the bottom for spacing between rows */
     }
 }
 
