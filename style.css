@@ -44,6 +44,19 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
+/* Add a pseudo-element for the border effect */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border-color 0.3s ease-in-out; /* Add transition for smooth color change */
+    z-index: -1; /* Move the pseudo-element behind the text */
+}
+
 nav ul li a:hover {
     color: #fff; /* Change text color to white on hover */
     text-shadow:
@@ -56,6 +69,10 @@ nav ul li a:hover {
         -2px  2px 0 black,
          2px  2px 0 black; /* Add black shadow to text on hover */
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Add transition for smooth color and text-shadow change */
+}
+
+nav ul li a:hover::before {
+    border-color: #000; /* Change border color to black on hover */
 }
 
 /* Styling the text within menu scraps */
