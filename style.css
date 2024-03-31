@@ -6,10 +6,9 @@
 
 /* Styling the title drawing */
 #title-drawing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px; /* Add padding around the image */
 }
 
 /* Styling the navigation menu */
@@ -32,6 +31,36 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+}
+
+/* Styling the text within menu scraps */
+nav ul li img {
+    width: auto; /* Allow images to resize based on their original dimensions */
+    max-width: 100%;
+    height: auto;
+    position: relative; /* Ensure text is positioned relative to its parent image */
+}
+
+nav ul li span {
+    position: absolute; /* Position text absolutely within the parent image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    font-family: "Jacques Francois Shadow", sans-serif; /* Use Jacques Francois Shadow font */
+    font-size: 24px; /* Set font size to 24px */
+    color: black; /* Set text color to black */
+    text-align: center; /* Center text horizontally */
+    -webkit-text-stroke-width: 3px; /* Set stroke width to 3px for WebKit browsers */
+    -webkit-text-stroke-color: white; /* Set stroke color to white for WebKit browsers */
+    text-stroke-width: 3px; /* Set stroke width to 3px for other browsers */
+    text-stroke-color: white; /* Set stroke color to white for other browsers */
+}
+
+/* Ensure text scales responsively */
+@media (max-width: 768px) {
+    nav ul li span {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
 }
 
 /* Styling the main content */
