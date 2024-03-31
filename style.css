@@ -21,12 +21,14 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding-left: 320px; /* Add padding to the left */
+    padding: 0;
+    text-align: center; /* Center the menu items horizontally */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 10px; /* Add some spacing between menu items */
+    position: relative; /* Enable absolute positioning for text */
 }
 
 nav ul li a {
@@ -65,7 +67,6 @@ nav ul li span {
     font-family: "Jacques Francois Shadow", sans-serif; /* Use Jacques Francois Shadow font */
     font-size: 24px; /* Set font size to 24px */
     color: black; /* Set text color to black */
-    text-align: center; /* Center text horizontally */
     -webkit-text-stroke-width: 3px; /* Set stroke width to 3px for WebKit browsers */
     -webkit-text-stroke-color: white; /* Set stroke color to white for WebKit browsers */
     text-stroke-width: 3px; /* Set stroke width to 3px for other browsers */
