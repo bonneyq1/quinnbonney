@@ -191,3 +191,11 @@ main {
         padding: 40px 0 40px 20px;
     }
 }
+body {
+    /* Other existing styles */
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Ensure the background image remains fixed while scrolling */
+    background-color: rgba(255, 255, 255, 0.6); /* Set the background color with opacity */
+}
