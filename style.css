@@ -6,7 +6,7 @@
 
 /* Styling the title drawing */
 #title-drawing {
-    max-width: 300px; /* Adjust the maximum width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     padding: 40px; /* Add padding around the image */
     position: absolute;
@@ -50,19 +50,19 @@ nav ul li img {
 }
 /* Ensure images don't exceed the available space */
 nav ul li:nth-child(1) img {
-    max-width: 242px; /* Set maximum width for photography scrap */
+    max-width: 332px; /* Set maximum width for photography scrap */
 }
 
 nav ul li:nth-child(2) img {
-    max-width: 208px; /* Set maximum width for graphic design scrap */
+    max-width: 298px; /* Set maximum width for graphic design scrap */
 }
 
 nav ul li:nth-child(3) img {
-    max-width: 200px; /* Set maximum width for other stuff scrap */
+    max-width: 290px; /* Set maximum width for other stuff scrap */
 }
 
 nav ul li:nth-child(4) img {
-    max-width: 159px; /* Set maximum width for about me scrap */
+    max-width: 249px; /* Set maximum width for about me scrap */
 }
 
 nav ul li span {
@@ -71,7 +71,7 @@ nav ul li span {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center the text perfectly */
     font-family: "Jacques Francois Shadow", sans-serif; /* Use Jacques Francois Shadow font */
-    font-size: 26px; /* Set font size to 24px */
+    font-size: 30px; /* Set font size to 24px */
     color: black; /* Set text color to black */
      /* Add a thicker outline around the text */
 /* Add a thicker outline around the text */
@@ -139,7 +139,7 @@ main {
     position: relative; /* Enable absolute positioning for child elements */
     max-width: calc(25% - 20px); /* Set maximum width for each sticky note */
     /* Subtracting margin from the max-width to prevent wrapping */
-    margin-top: 20px; /* Adjust margin between sticky notes and menu items */
+    margin-top: 160px; /* Adjust margin between sticky notes and menu items */
 }
 
 .sticky-note img {
@@ -172,7 +172,15 @@ main {
 }
 .sticky-note:nth-child(4){
     flex: 2 0 100%; /* Set width to be twice as much */
-    max-width: 400px; /* Set maximum width for the first sticky note */
+    max-width: 600px; /* Set maximum width for the first sticky note */
+}
+.sticky-note:nth-child(2){
+    flex: 2 0 100%; /* Set width to be twice as much */
+    max-width: 300px; /* Set maximum width for the first sticky note */
+}
+.sticky-note:nth-child(3){
+    flex: 2 0 100%; /* Set width to be twice as much */
+    max-width: 290px; /* Set maximum width for the first sticky note */
 }
 /* Media query for smaller screens */
 @media (max-width: 768px) {
