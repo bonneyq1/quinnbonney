@@ -40,14 +40,36 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    /* Add transition for smooth color change */
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change text color to white on hover */
+    text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black,
+        -2px -2px 0 black,  
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black; /* Add black shadow to text on hover */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Add transition for smooth color and text-shadow change */
 }
 
 /* Styling the text within menu scraps */
 nav ul li img {
     max-width: 100%;
     height: auto;
-    position: relative; /* Ensure text is positioned relative to its parent image */
+    position: relative; /* Ensure text is positioned relative to its parent image */    
+    transition: filter 0.3s ease-in-out;
 }
+
+nav ul li a:hover img {
+    filter: brightness(1.5); /* Increase brightness of the image on hover */
+}
+
 /* Ensure images don't exceed the available space */
 nav ul li:nth-child(1) img {
     max-width: 332px; /* Set maximum width for photography scrap */
