@@ -8,7 +8,7 @@
 #title-drawing {
     max-width: 300px; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
-    padding: 20px; /* Add padding around the image */
+    padding: 40px; /* Add padding around the image */
 }
 
 /* Styling the navigation menu */
@@ -16,7 +16,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px;
+    padding: 40px;
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline-block; /* Display menu items horizontally */
-    margin-right: 10px; /* Add some spacing between menu items */
+    margin-right: 40px; /* Add some spacing between menu items */
     position: relative; /* Enable absolute positioning for text */
 }
 
@@ -67,10 +67,37 @@ nav ul li span {
     font-family: "Jacques Francois Shadow", sans-serif; /* Use Jacques Francois Shadow font */
     font-size: 24px; /* Set font size to 24px */
     color: black; /* Set text color to black */
-    -webkit-text-stroke-width: 3px; /* Set stroke width to 3px for WebKit browsers */
-    -webkit-text-stroke-color: white; /* Set stroke color to white for WebKit browsers */
-    text-stroke-width: 3px; /* Set stroke width to 3px for other browsers */
-    text-stroke-color: white; /* Set stroke color to white for other browsers */
+     /* Add a thicker outline around the text */
+/* Add a thicker outline around the text */
+    text-shadow:
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white,
+        -2px -2px 0 white,  
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white,
+        -3px -3px 0 white,  
+         3px -3px 0 white,
+        -3px  3px 0 white,
+         3px  3px 0 white;
+    
+    /* Add a smoother outline around the text */
+    text-shadow:
+        -1px -1px 1px rgba(255, 255, 255, 0.3),  
+         1px -1px 1px rgba(255, 255, 255, 0.3),
+        -1px  1px 1px rgba(255, 255, 255, 0.3),
+         1px  1px 1px rgba(255, 255, 255, 0.3),
+        -2px -2px 2px rgba(255, 255, 255, 0.3),  
+         2px -2px 2px rgba(255, 255, 255, 0.3),
+        -2px  2px 2px rgba(255, 255, 255, 0.3),
+         2px  2px 2px rgba(255, 255, 255, 0.3),
+        -3px -3px 3px rgba(255, 255, 255, 0.3),  
+         3px -3px 3px rgba(255, 255, 255, 0.3),
+        -3px  3px 3px rgba(255, 255, 255, 0.3),
+         3px  3px 3px rgba(255, 255, 255, 0.3);
+    
 }
 
 /* Ensure text scales responsively */
