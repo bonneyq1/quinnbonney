@@ -1,7 +1,6 @@
 /* Resetting default margin and padding */
 * {
     margin: 0;
-    padding: 0;
     padding: 10px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
@@ -21,7 +20,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 40px;
+    padding: 40px 0;
     max-width: calc(100% - 320px); /* Adjusted width to accommodate title image and margin */
     box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
@@ -29,7 +28,6 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Center the menu items horizontally */
 }
 
 nav ul li {
@@ -175,7 +173,7 @@ main {
     position: relative; /* Enable absolute positioning for child elements */
     max-width: calc(25% - 20px); /* Set maximum width for each sticky note */
     /* Subtracting margin from the max-width to prevent wrapping */
-    margin-top: 160px; /* Adjust margin between sticky notes and menu items */
+    margin-top: 10px; /* Adjust margin between sticky notes and menu items */
 }
 
 .sticky-note img {
