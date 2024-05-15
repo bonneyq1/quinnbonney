@@ -17,9 +17,7 @@
 
 /* Styling the navigation menu */
 nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
     padding: 40px 0;
     max-width: calc(100% - 320px); /* Adjusted width to accommodate title image and margin */
     box-sizing: border-box; /* Includes padding and border in the element's total width and height */
