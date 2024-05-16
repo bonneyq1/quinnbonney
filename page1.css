@@ -23,31 +23,31 @@
   
   .scrapbook-bg1 {
     background-image: url('page1_scrap1.png');
-    background-size: cover;
+    background-size: contain;
     padding: 20px;
     display: inline-block;
   }
   .scrapbook-bg2 {
     background-image: url('page1_scrap2.png');
-    background-size: cover;
+    background-size: contain;
     padding: 20px;
     display: inline-block;
   }
   .scrapbook-bg3 {
     background-image: url('page1_scrap3.png');
-    background-size: cover;
+    background-size: contain;
     padding: 20px;
     display: inline-block;
   }
   .scrapbook-bg4 {
     background-image: url('page1_scrap4.png');
-    background-size: cover;
+    background-size: contain;
     padding: 20px;
     display: inline-block;
   }
   .scrapbook-bg5 {
     background-image: url('page1_scrap5.png');
-    background-size: cover;
+    background-size: contain;
     padding: 20px;
     display: inline-block;
   }
