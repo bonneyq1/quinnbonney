@@ -1,4 +1,4 @@
-/* Resetting default margin and padding */
+ /* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 10px;
@@ -92,7 +92,7 @@ nav ul li:nth-child(2) img {
 nav ul li:nth-child(3) img {
     max-width: 290px; /* Set maximum width for other stuff scrap */
 }
-
+ 
 nav ul li:nth-child(4) img {
     max-width: 249px; /* Set maximum width for about me scrap */
 }
