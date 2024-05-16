@@ -61,15 +61,7 @@
     padding: 70px;
     display: inline-block;
   }
-    .scrapbook-bg6 {
-    background-image: url('scrappngs/page3_scrap6.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-    }
-
+  
   
   .scrapbook-item img {
     max-width: 100%;
