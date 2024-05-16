@@ -17,13 +17,8 @@
   justify-items: center;
 }
 
-.scrapbook-item {
-  position: relative;
-  display: inline-block;
-}
 
 .scrapbook-bg1 {
-  background-image: url('scrappngs/page1_scrap1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +26,7 @@
   display: inline-block;
 }
 .scrapbook-bg2 {
-  background-image: url('page1_scrap2.png');
+  background-image: url('scrappngs/page1_scrap2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,6 +55,26 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 70px;
+  display: inline-block;
+}
+.scrapbook-item1 {
+  position: relative;
+  display: inline-block;
+}
+.scrapbook-item2 {
+  position: relative;
+  display: inline-block;
+}
+.scrapbook-item3 {
+  position: relative;
+  display: inline-block;
+}
+.scrapbook-item4 {
+  position: relative;
+  display: inline-block;
+}
+.scrapbook-item5 {
+  position: relative;
   display: inline-block;
 }
 
