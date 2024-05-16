@@ -22,7 +22,7 @@
   }
   
   .scrapbook-bg1 {
-    background-image: url('page3_scrap1.png');
+    background-image: url('scrappngs/page3_scrap1.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     display: inline-block;
   }
   .scrapbook-bg2 {
-    background-image: url('page3_scrap2.png');
+    background-image: url('scrappngs/page3_scrap2.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     display: inline-block;
   }
   .scrapbook-bg3 {
-    background-image: url('page3_scrap3.png');
+    background-image: url('scrappngs/page3_scrap3.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
     display: inline-block;
   }
   .scrapbook-bg4 {
-    background-image: url('page3_scrap4.png');
+    background-image: url('scrappngs/page3_scrap4.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,13 +54,22 @@
     display: inline-block;
   }
   .scrapbook-bg5 {
-    background-image: url('page3_scrap5.png');
+    background-image: url('scrappngs/page3_scrap5.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     padding: 70px;
     display: inline-block;
   }
+    .scrapbook-bg6 {
+    background-image: url('scrappngs/page3_scrap6.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+    }
+
   
   .scrapbook-item img {
     max-width: 100%;
