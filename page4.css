@@ -1,119 +1,88 @@
 #about-me {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  #about-me h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-  }
-  
-  .design-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .scrapbook-item {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .scrapbook-bg1 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-  }
-  .scrapbook-bg2 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-  }
-  .scrapbook-bg3 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-  }
-  .scrapbook-bg4 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-  }
-  .scrapbook-bg5 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: inline-block;
-  }
+  margin-top: 40px;
+  text-align: center;
+  padding: 70px;
+}
 
-  .scrapbook-item1 {
-    position: relative;
-    display: inline-block;
-  }
-  .scrapbook-item2 {
-    position: relative;
-    display: inline-block;
-  }
+#about-me h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
 
-  .scrapbook-item4 {
-    position: relative;
-    display: inline-block;
-  }
-  .scrapbook-item5 {
-    position: relative;
-    display: inline-block;
-  }
-  .scrapbook-bg1,
-  .scrapbook-bg2,
-  .scrapbook-bg3,
-  .scrapbook-bg4,
-  .scrapbook-bg5 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-    align-items: center; /* Add this */
-  }
+.design-container {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
 
-  .scrapbook-item1,
-  .scrapbook-item2,
-  .scrapbook-item4,
-  .scrapbook-item5 {
-    position: relative;
-    display: inline-block;
-    margin: auto; /* Add this */
-  }
-  
-  .scrapbook-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .small-item {
-    max-width: 120px;
-  }
-  
-  .item-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
+.scrapbook-item {
+  position: relative;
+  display: inline-block;
+}
+
+.scrapbook-bg1 {
+  background-image: url('scrappngs/page4_scrap1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 190px;
+  padding: 70px;
+  display: inline-block;
+}
+.scrapbook-bg2 {
+  background-image: url('scrappngs/page4_scrap2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding: 70px;
+  display: inline-block;
+}
+.scrapbook-bg3 {
+  background-image: url('scrappngs/page4_scrap3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 180px;
+  display: inline-block;
+}
+.scrapbook-bg4 {
+  background-image: url('scrappngs/page4_scrap4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px;
+  display: inline-block;
+}
+.scrapbook-bg5 {
+  background-image: url('scrappngs/page4_scrap5.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px;
+  display: inline-block;
+}
+
+.scrapbook-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.small-item {
+  max-width: 120px;
+}
+
+.item-text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
