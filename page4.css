@@ -22,7 +22,11 @@
   position: relative;
   display: inline-block;
 }
-
+.scrapbook-item img {
+  max-width: 100%;
+  min-width: 200px; /* Adjust this value to your preference */
+  height: auto;
+}
 .scrapbook-bg1 {
   background-image: url('scrappngs/page4_scrap1.png');
   background-size: contain;
