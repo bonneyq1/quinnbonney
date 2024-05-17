@@ -1,4 +1,3 @@
-
 #graphic-design {
   text-align: center;
   padding: 50px;
@@ -11,6 +10,7 @@
 }
 
 .design-container {
+  margin-top: 140px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -21,12 +21,17 @@
   position: relative;
   display: inline-block;
 }
+.scrapbook-item img {
+  max-width: 100%;
+  min-width: 200px; /* Adjust this value to your preference */
+  height: auto;
+}
 .scrapbook-bg1 {
   background-image: url('scrappngs/page1_scrap1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
+  padding: 90px;
   display: inline-block;
 }
 .scrapbook-bg2 {
@@ -34,7 +39,8 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
+  margin-top: 170px;
+  padding: 100px;
   display: inline-block;
 }
 .scrapbook-bg3 {
@@ -42,7 +48,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
+  padding: 90px;
   display: inline-block;
 }
 .scrapbook-bg4 {
@@ -50,7 +56,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
+  padding: 100px;
   display: inline-block;
 }
 .scrapbook-bg5 {
@@ -58,7 +64,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px;
+  padding: 90px;
   display: inline-block;
 }
 
@@ -73,7 +79,6 @@
 
 .item-text {
   position: absolute;
-  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
