@@ -42,6 +42,11 @@ body {
   display: inline-block;
 }
 
+/*pushing text down on hermit island pic*/
+.scrapbook-item2 {
+  margin-top: 80px;
+}
+
 /* Background styles for design items */
 .scrapbook-bg1,
 .scrapbook-bg2,
