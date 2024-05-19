@@ -1,0 +1,84 @@
+#graphic-design {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #graphic-design h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .design-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .scrapbook-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .scrapbook-bg1 {
+    background-image: url('scrappngs/page1_scrap1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+  }
+  .scrapbook-bg2 {
+    background-image: url('scrappngs/page1_scrap2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+  }
+  .scrapbook-bg3 {
+    background-image: url('scrappngs/page1_scrap3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+  }
+  .scrapbook-bg4 {
+    background-image: url('scrappngs/page1_scrap4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+  }
+  .scrapbook-bg5 {
+    background-image: url('scrappngs/page1_scrap5.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: inline-block;
+  }
+  
+  .scrapbook-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .small-item {
+    max-width: 120px;
+  }
+  
+  .item-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
