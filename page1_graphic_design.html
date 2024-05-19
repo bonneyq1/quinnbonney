@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap">
     <link rel="stylesheet" href="page1.css">
+    <script>
+        if (!window.location.pathname.includes("index.html")) {
+            document.write('<link rel="stylesheet" href="page1.css">');
+        }
+    </script>
 </head>
 <body>
 
