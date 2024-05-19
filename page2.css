@@ -13,6 +13,7 @@ body {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+
 /* Style for the home arrow link */
 .home-arrow {
   position: fixed;
@@ -43,7 +44,7 @@ body {
   height: auto;
   display: block;
 }
-/* Design Container Styles */
+/* Container for design items */
 .design-container {
   margin-top: 140px;
   display: grid;
@@ -51,41 +52,27 @@ body {
   gap: 20px;
   justify-items: center;
 }
-/* Text inside design items */
-.item-text {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* White background */
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 
-/* Scrapbook Item Styles */
+/* Styles for individual design items */
 .scrapbook-item {
-  text-align: center;
   position: relative;
   display: inline-block;
 }
 
-.scrapbook-item img {
-  max-width: 100%;
-  min-width: 200px; /* Adjust this value to your preference */
-  height: auto;
-}
-
-/* Background Styles for Each Scrapbook Item */
+/* Background styles for design items */
+.scrapbook-bg1,
 .scrapbook-bg2,
 .scrapbook-bg3,
-.scrapbook-bg4,
-.scrapbook-bg5 {
+.scrapbook-bg4, {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 70px;
   display: inline-block;
+}
+.scrapbook-bg1 {
+  background-image: url('scrappngs/page2_scrap1.png');
+  padding: 70px;
 }
 
 .scrapbook-bg2 {
@@ -104,16 +91,29 @@ body {
   padding: 50px;
 }
 
-.scrapbook-bg5 {
-  background-image: url('scrappngs/page2_scrap5.png');
-  padding: 70px;
+
+/* Image styles */
+.scrapbook-item img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Specific Styles for Small Items */
 .small-item {
   max-width: 120px;
 }
 
+/* Text inside design items */
+.item-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* White background */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 /* Link Styles */
 .scrapbook-item a {
   color: black;
@@ -125,9 +125,4 @@ body {
 
 .scrapbook-item a:hover {
   color: pink;
-}
-/* Ensure text inside the links is centered */
-.scrapbook-item a .item-text {
-  display: block;
-  text-align: center;
 }
