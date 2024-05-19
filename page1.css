@@ -82,11 +82,10 @@ body {
   transform: translateX(-50%);
   font-weight: bold;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8); /* White background */
   padding: 5px 10px;
   border-radius: 5px;
 }
-
 /* Link Styles */
 .scrapbook-item a {
   color: black;
