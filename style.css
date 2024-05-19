@@ -4,6 +4,9 @@
     padding: 10px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+.custom-cursor {
+    cursor: url('bee-mouse.png'), auto;
+}
 
 /* Styling the title drawing */
 #title-drawing {
