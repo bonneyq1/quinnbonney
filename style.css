@@ -1,3 +1,22 @@
+  /* Load page1.css if the URL contains "page1_name.html" */
+  @media (all) and (min-width: 0px) {
+    @import url("page1.css") screen;
+}
+   
+ /* Load page2.css if the URL contains "page2_name.html" */
+ @media (all) and (min-width: 0px) {
+     @import url("page2.css") screen;
+}
+/* Load page3.css if the URL contains "page3_name.html" */
+@media (all) and (min-width: 0px) {
+    @import url("page3.css") screen;
+}
+   
+ /* Load page4.css if the URL contains "page4_name.html" */
+ @media (all) and (min-width: 0px) {
+     @import url("page4.css") screen;
+}
+
  /* Resetting default margin and padding */
 * {
     margin: 0;
