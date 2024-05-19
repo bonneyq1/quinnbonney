@@ -1,3 +1,9 @@
+/* General Styles */
+body {
+  font-family: 'Jacques Francois Shadow', serif; /* Assuming this is your preferred font */
+}
+
+/* Styles for the About Me section */
 #about-me {
   margin-top: 40px;
   text-align: center;
@@ -10,6 +16,7 @@
   text-transform: uppercase;
 }
 
+/* Container for design items */
 .design-container {
   margin-top: 140px;
   display: grid;
@@ -18,51 +25,18 @@
   justify-items: center;
 }
 
+/* Styles for individual design items */
 .scrapbook-item {
   position: relative;
   display: inline-block;
 }
-.scrapbook-item img {
-  max-width: 100%;
-  min-width: 200px; /* Adjust this value to your preference */
-  height: auto;
-}
-.scrapbook-bg1 {
-  background-image: url('scrappngs/page4_scrap1.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 190px;
-  padding: 70px;
-  display: inline-block;
-}
-.scrapbook-bg2 {
-  background-image: url('scrappngs/page4_scrap2.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 20px;
-  padding: 70px;
-  display: inline-block;
-}
-.scrapbook-bg3 {
-  background-image: url('scrappngs/page4_scrap3.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 180px;
-  display: inline-block;
-}
-.scrapbook-bg4 {
-  background-image: url('scrappngs/page4_scrap4.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 70px;
-  display: inline-block;
-}
+
+/* Background styles for design items */
+.scrapbook-bg1,
+.scrapbook-bg2,
+.scrapbook-bg3,
+.scrapbook-bg4,
 .scrapbook-bg5 {
-  background-image: url('scrappngs/page4_scrap5.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +44,30 @@
   display: inline-block;
 }
 
+.scrapbook-bg1 {
+  background-image: url('scrappngs/page4_scrap1.png');
+  margin-top: 190px;
+}
+
+.scrapbook-bg2 {
+  background-image: url('scrappngs/page4_scrap2.png');
+  margin-top: 20px;
+}
+
+.scrapbook-bg3 {
+  background-image: url('scrappngs/page4_scrap3.png');
+  padding: 180px;
+}
+
+.scrapbook-bg4 {
+  background-image: url('scrappngs/page4_scrap4.png');
+}
+
+.scrapbook-bg5 {
+  background-image: url('scrappngs/page4_scrap5.png');
+}
+
+/* Image styles */
 .scrapbook-item img {
   max-width: 100%;
   height: auto;
@@ -79,6 +77,7 @@
   max-width: 120px;
 }
 
+/* Text inside design items */
 .item-text {
   position: absolute;
   top: 50px;
@@ -89,4 +88,17 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+/* Link Styles */
+.scrapbook-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Adjust this value as needed */
+}
+
+.scrapbook-item a:hover {
+  color: pink;
 }
