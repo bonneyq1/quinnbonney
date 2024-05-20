@@ -70,27 +70,19 @@ body {
   padding: 70px;
   display: inline-block;
 }
+/* just in case
 .scrapbook-bg1 {
-  background-image: url('scrappngs/page2_scrap1.png');
-  padding: 70px;
 }
 
 .scrapbook-bg2 {
-  background-image: url('scrappngs/page2_scrap2.png');
-  padding: 70px;
 }
 
 .scrapbook-bg3 {
-  background-image: url('scrappngs/page2_scrap3.png');
-  padding: 120px;
 }
 
 .scrapbook-bg4 {
-  background-image: url('scrappngs/page2_scrap4.png');
-  margin-top: 110px;
-  padding: 50px;
 }
-
+*/
 
 /* Image styles */
 .scrapbook-item img {
