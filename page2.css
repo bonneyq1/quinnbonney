@@ -23,8 +23,34 @@
 }
 
 .image-wrapper {
-  position: relative;
+  position: absolute;
   margin: 0 1rem;
+  transform-origin: center;
+}
+
+.image-wrapper:nth-child(1) {
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.image-wrapper:nth-child(2) {
+  transform: rotate(3deg);
+  z-index: 4;
+}
+
+.image-wrapper:nth-child(3) {
+  transform: rotate(-2deg);
+  z-index: 3;
+}
+
+.image-wrapper:nth-child(4) {
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.image-wrapper:nth-child(5) {
+  transform: rotate(-3deg);
+  z-index: 1;
 }
 
 .image-wrapper img {
