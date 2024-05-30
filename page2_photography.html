@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap">
-    <link rel="stylesheet" href="page2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap">
+  <link rel="stylesheet" href="page2.css">
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">
-          <img src="photography/back-arrow.png" alt="Back to Home">
-        </a>
-        <h1 class="main-title">Photography</h1>
-        <div class="image-container">
-          <div class="image-wrapper">
-            <img src="photography/image1.png" alt="Image 1">
-            <h2 class="image-title">Image 1 Title</h2>
-          </div>
-          <div class="image-wrapper">
-            <img src="photography/image2.png" alt="Image 2">
-            <img src="photography/nested-image2.JPG" alt="Nested Image 2" class="nested-image">
-          </div>
-          <div class="image-wrapper">
-            <img src="photography/image3.png" alt="Image 3">
-          </div>
-          <div class="image-wrapper">
-            <img src="photography/image4.png" alt="Image 4">
-            <img src="photography/nested-image4.jpg" alt="Nested Image 4" class="nested-image">
-            <h2 class="image-title">Image 4 Title</h2>
-          </div>
-          <div class="image-wrapper">
-            <img src="photography/image5.png" alt="Image 5">
-            <img src="photography/nested-image5.jpg" alt="Nested Image 5" class="nested-image">
-            <h2 class="image-title">Image 5 Title</h2>
-          </div>
+  <div class="container">
+    <div class="header">
+      <a href="index.html" class="back-link">
+        <img src="photography/back-arrow.png" alt="Back to Home">
+      </a>
+      <h1 class="main-title">Photography</h1>
+    </div>
+    <div class="image-container">
+      <div class="image-column">
+        <div class="image-wrapper">
+          <img src="photography/image1.png" alt="Image 1" class="rotated-image">
+          <h2 class="image-title">Image 1 Title</h2>
+        </div>
+        <div class="image-wrapper">
+          <img src="photography/image2.png" alt="Image 2" class="rotated-image">
+          <img src="photography/nested-image2.JPG" alt="Nested Image 2" class="nested-image">
         </div>
       </div>
+      <div class="image-column">
+        <div class="image-wrapper">
+          <img src="photography/image3.png" alt="Image 3" class="enlarged-image">
+        </div>
+        <div class="image-wrapper">
+          <img src="photography/image4.png" alt="Image 4">
+          <img src="photography/nested-image4.jpg" alt="Nested Image 4" class="nested-image">
+          <h2 class="image-title">Image 4 Title</h2>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="photography/image5.png" alt="Image 5">
+        <img src="photography/nested-image5.jpg" alt="Nested Image 5" class="nested-image">
+        <h2 class="image-title">Image 5 Title</h2>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
