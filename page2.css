@@ -121,6 +121,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 150px;
+  margin-right: 100px;
 }
 
 .image-column {
@@ -133,6 +135,34 @@
   position: relative;
   margin: 1rem 0;
 }
+.image-wrapper:nth-child(1) {
+  max-width: 170px;
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.image-wrapper:nth-child(2) {
+  max-width: 320px;
+  transform: rotate(-3deg);
+  z-index: 4;
+}
+
+.image-wrapper:nth-child(3) {
+  max-width:100px;
+  transform: rotate(-2deg);
+  z-index: 3;
+}
+
+.image-wrapper:nth-child(4) {
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.image-wrapper:nth-child(5) {
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
 
 .rotated-image {
   transform: rotate(90deg);
