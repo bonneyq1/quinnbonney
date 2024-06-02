@@ -1,102 +1,3 @@
-/*
-.container {
-  text-align: center;
-  margin-top: 300px; /* Add margin-top to container *
-}
-
-.back-link img {
-  width: 50%; /* Reduce the width of the back arrow image *
-
-}
-
-.back-link {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.main-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Adjust as needed *
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-wrapper {
-  position: relative;
-  margin: 0 1rem;
-  transform-origin: center;
-}
-
-.image-wrapper:nth-child(1) {
-  transform: rotate(-5deg);
-  z-index: 5;
-}
-
-.image-wrapper:nth-child(2) {
-  transform: rotate(3deg);
-  z-index: 4;
-}
-
-.image-wrapper:nth-child(3) {
-  transform: rotate(-2deg);
-  z-index: 3;
-}
-
-.image-wrapper:nth-child(4) {
-  transform: rotate(1deg);
-  z-index: 2;
-}
-
-.image-wrapper:nth-child(5) {
-  transform: rotate(-3deg);
-  z-index: 1;
-}
-
-.image-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.nested-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.image-title {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.2rem;
-}
-
-/* Responsive styles 
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 1.5rem;
-  }
-
-  .image-container {
-    height: auto;
-    flex-wrap: wrap;
-  }
-
-  .image-wrapper {
-    margin: 1rem;
-  }
-*/
 .container {
   text-align: center;
 }
@@ -107,7 +8,9 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-
+.back-link {
+  align-content: 
+}
 .back-link img {
   width: 50%;
 }
@@ -162,7 +65,6 @@
   transform: rotate(-3deg);
   z-index: 1;
 }
-
 
 .rotated-image {
   transform: rotate(90deg);
