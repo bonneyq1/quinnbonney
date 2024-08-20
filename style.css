@@ -50,11 +50,14 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex; /* Display menu items in a row */
+    flex-grow: 1; /* Allow the ul to take up available space */
 }
 
 nav ul li {
     margin-right: 20px; /* Adjust space between items */
     position: relative; /* Position relative for absolute positioning of text */
+    flex-grow: 1; /* Allow each li to grow */
+    flex-shrink: 1; /* Allow each li to shrink */
 }
 
 nav ul li a {
@@ -64,10 +67,14 @@ nav ul li a {
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
     position: relative; /* Position relative for absolute positioning of text */
+    flex-grow: 1; /* Allow the link to grow and fill the available space */
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 1.2rem; /* Use relative font size */
+    min-width: 0; /* Allow the text to shrink properly */
 }
 
 nav ul li img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block; /* Ensure image is block to avoid extra space */
 }
@@ -78,10 +85,12 @@ nav ul li span {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Offset by half width and height */
     color: white; /* Text color */
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 1rem; /* Use relative font size */
     font-family: 'Jacques Francois Shadow', cursive; /* Ensure font is applied */
     text-align: center; /* Center text */
+    min-width: 0; /* Allow the text to shrink properly */
 }
+
 
 nav ul li a:hover,
 nav ul li a.active {
@@ -99,20 +108,12 @@ nav ul li a.active {
 }
 
 nav ul li img {
-    max-width: 100%;
-    height: auto;
     transition: filter 0.3s ease-in-out;
 }
 
 nav ul li a:hover img {
     filter: brightness(1.5); /* Brighten image on hover */
 }
-
-/* Specific Image Sizes for Navigation */
-nav ul li:nth-child(1) img { max-width: 332px; } /* Graphic design scrap */
-nav ul li:nth-child(2) img { max-width: 298px; } /* Photography scrap */
-nav ul li:nth-child(3) img { max-width: 290px; } /* Other stuff scrap */
-nav ul li:nth-child(4) img { max-width: 249px; } /* About me scrap */
 
 /* Sticky Notes */
 .sticky-note {
@@ -145,30 +146,37 @@ nav ul li:nth-child(4) img { max-width: 249px; } /* About me scrap */
     margin-top: 20px; /* Space below the menu */
 }
 
-.sticky-note:nth-child(2) {
-    max-width: 300px;
-}
-
-.sticky-note:nth-child(3) {
-    max-width: 290px;
-}
-
-.sticky-note:nth-child(4) {
-    max-width: 600px;
-}
-
-/* Global Footer Styles */
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Adjust height as needed */
-    background-color: black;
-    z-index: 100; /* Keep the footer above other content */
-}
-
 /* Responsive Styles */
+@media (max-width: 1642px) {
+    #title-drawing {
+        max-width: 400px; /* Adjust max-width as needed */
+    }
+}
+
+@media (max-width: 1234px) {
+    nav ul li {
+        margin-right: 15px; /* Adjust spacing for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    nav ul li img {
+        max-width: 90%; /* Reduce image size slightly */
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul li {
+        margin-right: 10px; /* Reduce spacing further */
+    }
+    nav ul li a {
+        font-size: 0.9rem; /* Further adjust font size */
+    }
+
+    nav ul li img {
+        max-width: 80%; /* Reduce image size further */
+    }
+}
+
 @media (max-width: 768px) {
     /* Title Drawing Adjustments */
     #title-drawing {
@@ -219,6 +227,10 @@ nav ul li:nth-child(4) img { max-width: 249px; } /* About me scrap */
         margin-bottom: 20px; /* Space between vertical items */
     }
 
+    nav ul li a {
+        font-size: 0.85rem; /* Final adjustment before mobile menu */
+    }
+
     /* Show the nav container when the menu icon is clicked */
     .nav-container.show {
         right: 0; /* Slide into view */
@@ -233,24 +245,5 @@ nav ul li:nth-child(4) img { max-width: 249px; } /* About me scrap */
     /* Sticky Note Adjustments */
     .sticky-note {
         max-width: calc(100% - 20px); /* Adjust width for smaller screens */
-    }
-}
-
-@media (max-width: 1642px) {
-    #title-drawing {
-        max-width: 400px; /* Adjust max-width as needed */
-    }
-}
-
-@media (max-width: 1430px) {
-    nav {
-        padding: 20px; /* Adjust padding for different screen sizes */
-    }
-}
-
-@media (max-width: 1234px) {
-    main {
-        margin: 40px;
-        margin-top: 600px; /* Adjust based on title drawing height */
     }
 }
