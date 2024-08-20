@@ -8,91 +8,111 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap">
 </head>
 <body>
-    <!-- Title Drawing -->
-    <header>
-        <div class="header-container">
+     <!-- Loading Screen -->
+     <div id="loading-screen">
+        <img src="loading-image.png" alt="Loading Image" id="loading-image">
+    </div>
 
-            <img src="home_png/title_drawing.png" alt="Quinn's Artpalooza" id="title-drawing">
+    <!-- Main Content -->
+    <div id="main-content" style="display:none;">
+        <!-- Title Drawing -->
+        <header>
+            <div class="header-container">
+                <img src="home_png/title_drawing.png" alt="Quinn's Artpalooza" id="title-drawing">
 
-            <!-- Menu Icon (Visible on small screens) -->
-            <img id="menu-icon" src="menu-icon.png" alt="Menu Icon">
+                <!-- Menu Icon (Visible on small screens) -->
+                <img id="menu-icon" src="menu-icon.png" alt="Menu Icon">
 
-            <!-- Navigation Menu -->
-                <div class="nav-container">
-                <nav>
-                    <ul id="menu-tabs">
-                        <li>
-                            <a href="page1_graphic_design.html" class="active">
-                                <img src="home_png/graphic_design_scrap.png" alt="Graphic Design Scrap">
-                                <span>Graphic Design</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="page2_photography.html" class="active">
-                                <img src="home_png/photography_scrap.png" alt="Photography Scrap">
-                                <span>Photography</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="page3_otherstuff.html" class="active">
-                                <img src="home_png/other_stuff_scrap.png" alt="Other Stuff Scrap">
-                                <span>Other Stuff</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="page4_aboutme.html" class="active">
-                                <img src="home_png/about_me_scrap.png" alt="About Me Scrap">
-                                <span>About Me</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <!-- Navigation Menu -->
+                    <div class="nav-container">
+                    <nav>
+                        <ul id="menu-tabs">
+                            <li>
+                                <a href="page1_graphic_design.html" class="active">
+                                    <img src="home_png/graphic_design_scrap.png" alt="Graphic Design Scrap">
+                                    <span>Graphic Design</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page2_photography.html" class="active">
+                                    <img src="home_png/photography_scrap.png" alt="Photography Scrap">
+                                    <span>Photography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page3_otherstuff.html" class="active">
+                                    <img src="home_png/other_stuff_scrap.png" alt="Other Stuff Scrap">
+                                    <span>Other Stuff</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page4_aboutme.html" class="active">
+                                    <img src="home_png/about_me_scrap.png" alt="About Me Scrap">
+                                    <span>About Me</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main Content with Sticky Notes -->
-    <main>
-        <div class="sticky-note">
-            <img src="sticky/sticky_note1.png" alt="Sticky Note 1">
-            <div class="content">
-                <h2>Sticky Note 1</h2>
-                <p>This is the content for Sticky Note 1.</p>
+        <!-- Main Content with Sticky Notes -->
+        <main>
+            <div class="sticky-note">
+                <img src="sticky/sticky_note1.png" alt="Sticky Note 1">
+                <div class="content">
+                    <h2>Sticky Note 1</h2>
+                    <p>This is the content for Sticky Note 1.</p>
+                </div>
             </div>
-        </div>
-        <div class="sticky-note">
-            <img src="sticky/sticky_note2.png" alt="Sticky Note 2">
-            <div class="content">
-                <h2>Sticky Note 2</h2>
-                <p>This is the content for Sticky Note 2.</p>
+            <div class="sticky-note">
+                <img src="sticky/sticky_note2.png" alt="Sticky Note 2">
+                <div class="content">
+                    <h2>Sticky Note 2</h2>
+                    <p>This is the content for Sticky Note 2.</p>
+                </div>
             </div>
-        </div>
-        <div class="sticky-note">
-            <img src="sticky/sticky_note3.png" alt="Sticky Note 3">
-            <div class="content">
-                <h2>Sticky Note 3</h2>
-                <p>This is the content for Sticky Note 3.</p>
+            <div class="sticky-note">
+                <img src="sticky/sticky_note3.png" alt="Sticky Note 3">
+                <div class="content">
+                    <h2>Sticky Note 3</h2>
+                    <p>This is the content for Sticky Note 3.</p>
+                </div>
             </div>
-        </div>
-        <div class="sticky-note">
-            <img src="sticky/sticky_note4.png" alt="Sticky Note 4">
-            <div class="content">
-                <h2>Sticky Note 4</h2>
-                <p>This is the content for Sticky Note 4.</p>
+            <div class="sticky-note">
+                <img src="sticky/sticky_note4.png" alt="Sticky Note 4">
+                <div class="content">
+                    <h2>Sticky Note 4</h2>
+                    <p>This is the content for Sticky Note 4.</p>
+                </div>
             </div>
-        </div>
-        <div class="footer">
-            <p>This is the footer content.</p>
-        </div>
-    </main>
+            <div class="footer">
+                <p>This is the footer content.</p>
+            </div>
+        </main>
 
-    <!-- JavaScript to toggle the navigation menu -->
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            const navContainer = document.querySelector('.nav-container');
-            navContainer.classList.toggle('show'); // Toggle the "show" class
-        });
-    </script>
+        <!--loading screen JavaScript-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                const mainContent = document.getElementById('main-content');
+        
+                // Hide loading screen and show main content after 7 seconds
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    mainContent.style.display = 'block';
+                }, 7000); // 7 seconds delay
+            });
+        </script>
+        
+        <!-- JavaScript to toggle the navigation menu -->
+        <script>
+            document.getElementById('menu-icon').addEventListener('click', function() {
+                const navContainer = document.querySelector('.nav-container');
+                navContainer.classList.toggle('show'); // Toggle the "show" class
+            });
+        </script>
 
 </body>
 </html>
