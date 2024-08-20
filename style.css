@@ -29,6 +29,14 @@ body {
     z-index: 100; /* Ensure it's above other elements */
 }
 
+#menu-icon {
+    display: none; /* Initially hidden */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    z-index: 101; /* Ensure it's above the menu */
+}
+
 /* Navigation Menu */
 nav {
     display: flex; /* Flex layout for the navigation menu */
@@ -162,26 +170,67 @@ nav ul li:nth-child(4) img { max-width: 249px; } /* About me scrap */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    /* Title Drawing Adjustments */
     #title-drawing {
         margin: 10px auto; /* Reduce margin for smaller screens */
         padding: 20px; /* Adjust padding for smaller screens */
     }
+
+    /* Menu Icon */
+    #menu-icon {
+        display: block; /* Show the menu icon */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        cursor: pointer;
+        z-index: 101; /* Ensure it's above the menu */
+    }
+
+    /* Navigation Container */
+    .nav-container {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Initially off-screen */
+        width: 250px; /* Width of the slide-out menu */
+        height: 100%; /* Full height */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+        transition: right 0.3s ease; /* Smooth slide effect */
+        z-index: 100; /* Ensure it's above the content but below the icon */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Navigation Menu Adjustments */
     nav {
         flex-direction: column; /* Stack nav items vertically */
         align-items: center; /* Center nav items horizontally */
         padding: 20px 0; /* Increase padding for spacing */
     }
+
     nav ul {
         flex-direction: column; /* Stack menu items vertically */
     }
+
     nav ul li {
         margin-right: 0;
         margin-bottom: 20px; /* Space between vertical items */
     }
+
+    /* Show the nav container when the menu icon is clicked */
+    .nav-container.show {
+        right: 0; /* Slide into view */
+    }
+
+    /* Main Content Adjustments */
     main {
         flex-direction: column;
         align-items: center;
     }
+
+    /* Sticky Note Adjustments */
     .sticky-note {
         max-width: calc(100% - 20px); /* Adjust width for smaller screens */
     }
