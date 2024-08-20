@@ -34,6 +34,7 @@ nav {
     display: flex; /* Flex layout for the navigation menu */
     align-items: center; /* Center items vertically */
     padding: 10px; /* Add padding for spacing */
+    margin-top: 50px;
 }
 
 nav ul {
@@ -45,7 +46,7 @@ nav ul {
 
 nav ul li {
     margin-right: 20px; /* Adjust space between items */
-    position: relative; /* For positioning text within images */
+    position: relative; /* Position relative for absolute positioning of text */
 }
 
 nav ul li a {
@@ -53,6 +54,25 @@ nav ul li a {
     color: #333;
     display: flex; /* Flexbox for alignment within the list item */
     align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Position relative for absolute positioning of text */
+}
+
+nav ul li img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensure image is block to avoid extra space */
+}
+
+nav ul li span {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half width and height */
+    color: white; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+    font-family: 'Jacques Francois Shadow', cursive; /* Ensure font is applied */
+    text-align: center; /* Center text */
 }
 
 nav ul li a:hover,
