@@ -299,6 +299,7 @@ nav ul li a:hover img {
 
     /* Sticky Note */
     .sticky-note {
+        padding-left: 25px;
         flex: 1 1 100%; /* Full width of the container */
         max-width: 100%; /* Full width of the container */
         margin: 10px 0; /* Adjust margin for vertical layout */
