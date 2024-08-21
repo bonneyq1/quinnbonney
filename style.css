@@ -151,7 +151,7 @@ nav ul li a:hover img {
 
 /* Sticky Note Image */
 .sticky-note img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -170,6 +170,26 @@ nav ul li a:hover img {
 .sticky-note:nth-child(1) {
     flex: 2 0 100%;
     max-width: 700px;
+    margin-top: 20px; /* Space below the menu */
+}
+
+.sticky-note:nth-child(2) {
+    flex: 2 0 100%;
+    max-width: 400px;
+    margin-top: 20px; /* Space below the menu */
+}
+
+.sticky-note:nth-child(3) {
+    flex: 2 0 100%;
+    padding-left: 50px;
+    max-width: 350px;
+    margin-top: 20px; /* Space below the menu */
+}
+
+.sticky-note:nth-child(4) {
+    flex: 2 0 100%;
+    padding-left: 20px;
+    max-width: 500px;
     margin-top: 20px; /* Space below the menu */
 }
 
