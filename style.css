@@ -103,7 +103,7 @@ nav ul li span {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Offset by half width and height */
     color: white; /* Text color */
-    font-size: 1rem; /* Use relative font size */
+    font-size: 1.3rem; /* Use relative font size */
     font-family: 'Jacques Francois Shadow', cursive; /* Ensure font is applied */
     text-align: center; /* Center text */
     min-width: 0; /* Allow the text to shrink properly */
@@ -133,14 +133,23 @@ nav ul li a:hover img {
     filter: brightness(1.5); /* Brighten image on hover */
 }
 
-/* Sticky Notes */
+/* Sticky Notes Container */
+.sticky-notes-container {
+    display: flex; /* Arrange sticky notes in a row by default */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-around; /* Distribute space between items */
+    margin: 0 auto; /* Center container if needed */
+}
+
+/* Sticky Note */
 .sticky-note {
-    flex: 1 0 45%;
+    flex: 1 1 calc(25% - 20px); /* Flex-grow, flex-shrink, and basis */
     margin: 10px;
-    max-width: calc(25% - 20px); /* Prevent wrapping */
+    max-width: calc(25% - 20px); /* Prevent wrapping and margin adjustments */
     position: relative;
 }
 
+/* Sticky Note Image */
 .sticky-note img {
     width: 100%;
     height: auto;
@@ -151,9 +160,9 @@ nav ul li a:hover img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Ensure content is perfectly centered */
+    transform: translate(-50%, -50%); /* Center content */
     text-align: center; /* Center align text inside */
-    white-space: nowrap; /* Prevent text from wrapping, useful for single lines */
+    white-space: nowrap; /* Prevent text from wrapping */
     width: 100%; /* Ensure text takes up the full width */
 }
 
@@ -195,7 +204,7 @@ nav ul li a:hover img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
     /* Title Drawing Adjustments */
     #title-drawing {
         margin: 10px auto; /* Reduce margin for smaller screens */
@@ -205,9 +214,10 @@ nav ul li a:hover img {
     /* Menu Icon */
     #menu-icon {
         display: block; /* Show the menu icon */
+        align-content: right;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 60px;
+        right: 60px;
         width: 50px; /* Adjust size as needed */
         height: auto;
         cursor: pointer;
@@ -221,7 +231,7 @@ nav ul li a:hover img {
         right: -100%; /* Initially off-screen */
         width: 250px; /* Width of the slide-out menu */
         height: 100%; /* Full height */
-        background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+        background-color: rgb(0 0 0 / 46%); /* Dark background */
         transition: right 0.3s ease; /* Smooth slide effect */
         z-index: 100; /* Ensure it's above the content but below the icon */
         display: flex;
@@ -259,9 +269,17 @@ nav ul li a:hover img {
         flex-direction: column;
         align-items: center;
     }
-
-    /* Sticky Note Adjustments */
-    .sticky-note {
-        max-width: calc(100% - 20px); /* Adjust width for smaller screens */
+    /* Sticky Notes Container */
+    .sticky-notes-container {
+        flex-direction: column; /* Stack sticky notes vertically */
+        align-items: center; /* Center items horizontally */
     }
+
+    /* Sticky Note */
+    .sticky-note {
+        flex: 1 1 100%; /* Full width of the container */
+        max-width: 100%; /* Full width of the container */
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+   
 }
