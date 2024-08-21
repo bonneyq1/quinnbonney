@@ -227,6 +227,8 @@ nav ul li a:hover img {
 @media (max-width: 1040px) {
     /* Title Drawing Adjustments */
     #title-drawing {
+        align-items: left;
+        width:70%;
         margin: 10px auto; /* Reduce margin for smaller screens */
         padding: 20px; /* Adjust padding for smaller screens */
     }
@@ -237,7 +239,7 @@ nav ul li a:hover img {
         align-content: right;
         position: absolute;
         top: 60px;
-        right: 60px;
+        right: 30px;
         width: 50px; /* Adjust size as needed */
         height: auto;
         cursor: pointer;
