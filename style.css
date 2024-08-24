@@ -151,6 +151,7 @@ nav ul li a:hover img {
 
 /* Sticky Note Image */
 .sticky-note img {
+    margin-top: 30px;
     width: 90%;
     height: auto;
 }
