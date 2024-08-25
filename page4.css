@@ -1,7 +1,3 @@
-/* General Styles */
-body {
-  font-family: 'Jacques Francois Shadow', serif; /* Assuming this is your preferred font */
-}
 
 /* Styles for the About Me section */
 #about-me {
@@ -14,62 +10,6 @@ body {
   font-size: 50px;
   margin-bottom: 30px;
   text-transform: uppercase;
-}
-/* Style for the home arrow link */
-.home-arrow {
-  position: fixed;
-  top: 20px;  /* Adjust as needed */
-  left: 20px;  /* Adjust as needed */
-  display: block;
-  width: 40px;  /* Adjust size as needed */
-  height: 40px;  /* Adjust size as needed */
-  z-index: 1000;  /* Ensure it appears above other content */
-  transition: transform 0.3s ease-in-out;
-}
-
-.home-arrow img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-/* Ensure the hover effect */
-.home-arrow:hover {
-  transform: translateX(-10px);  /* Slide to the left on hover */
-  filter: contrast(150%) brightness(70%); /* Simulate a color burn effect */
-}
-
-/* Ensure no visible text overlay */
-.home-arrow img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Container for design items */
-.design-container {
-  margin-top: 140px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-/* Text inside design items */
-.item-text {
-  position: absolute;
-  top: 20px; /* Adjust this value to move the text closer to the top */
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* White background */
-  padding: 5px 10px; /* Adjust this value to reduce the amount of white highlight */
-  border-radius: 5px;
-}
-/* Styles for individual design items */
-.scrapbook-item {
-  position: relative;
-  display: inline-block;
 }
 
 /*pushing text down on hermit island pic*/
@@ -111,40 +51,4 @@ body {
 
 .scrapbook-bg5 {
   background-image: url('scrappngs/page4_scrap5.png');
-}
-
-/* Image styles */
-.scrapbook-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.small-item {
-  max-width: 120px;
-}
-
-/* Text inside design items */
-.item-text {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-/* Link Styles */
-.scrapbook-item a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  margin-top: 10px; /* Adjust this value as needed */
-}
-
-.scrapbook-item a:hover {
-  color: pink;
 }
