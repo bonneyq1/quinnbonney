@@ -35,15 +35,3 @@
 .scrapbook-bg4 {
   background-image: url('photography/image5.png');
 }
-
-
-/* Specific Styles for Small Items */
-.small-item {
-  max-width: 120px;
-}
-
-/* Ensure text inside the links is centered */
-.scrapbook-item a .item-text {
-  display: block;
-  text-align: center;
-}
