@@ -1,0 +1,85 @@
+
+/* Background styles for design items */
+.scrapbook-bg1,
+.scrapbook-bg2,
+.scrapbook-bg3,
+.scrapbook-bg4, {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px;
+  display: inline-block;
+}
+
+.scrapbook-bg1 {
+  background-image: url('sticky/sticky_note1.png');
+}
+
+.scrapbook-bg2 {
+  background-image: url('sticky/sticky_note2.png');
+  margin-top: 70px;
+}
+
+.scrapbook-bg3 {
+  background-image: url('sticky/sticky_note3.png');
+  margin-top: 70px;
+}
+
+.scrapbook-bg4 {
+  background-image: url('sticky/sticky_note4.png');
+}
+/* Container for design items */
+.design-container {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Styles for individual design items */
+  .scrapbook-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Image styles */
+  .scrapbook-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .small-item {
+    max-width: 120px;
+  }
+  
+  /* Text inside design items */
+  .item-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  /* Link Styles */
+  .scrapbook-item a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Adjust this value as needed */
+  }
+  
+  .scrapbook-item a:hover {
+    color: pink;
+  }
+  
+  /* Ensure text inside the links is centered */
+    .scrapbook-item a .item-text {
+    display: block;
+    text-align: center;
+  }
