@@ -31,6 +31,40 @@
     width: 150px; /* Adjust image size */
     height: auto;
 }
+@media screen and (max-width: 1130px) {
+  #menu-icon {
+      display: block; /* Show the menu icon */
+  }
+
+  .nav-container {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hide the menu off-screen */
+      width: 250px;
+      height: 100vh;
+      background-color: #fff;
+      transition: 0.3s;
+      z-index: 1000;
+  }
+
+  .nav-container.show {
+      right: 0; /* Show the menu when .show class is added */
+  }
+
+  nav ul {
+      flex-direction: column;
+      padding-top: 60px; /* Space for the menu icon */
+  }
+
+  nav ul li {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  #title-drawing {
+      max-width: 300px; /* Adjust for smaller screens */
+  }
+}
 
 /* Navigation Menu */
 nav {
