@@ -137,8 +137,8 @@ nav ul li a:hover img {
 .scrapbook-bg4 {
   background-image: url('sticky/sticky_note4.png');
 }
-.scrapbook-bg1 .item-text {
-    padding-bottom: 30px; /* Adjust the padding as needed */
+.scrapbook-bg4 .item-text {
+    margin-bottom: 80px; /* Adjust the padding as needed */
 }
 /* Container for design items */
 .design-container {
